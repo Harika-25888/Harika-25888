@@ -1,0 +1,7 @@
+-👋 Hi, I’m @Harika-25888
+- 👀 I’m interested in currently learning web development(React and Python) and open-source projects.
+- 🌱 I’m currently learning React and Python.
+- 💞️ I’m looking to collaborate on projects related to front-end development and data science.
+- 📫 How to reach me:[Email](mailto:harrynudurupati@gmail.com)|[Linkedin](https://www.linkedin.com/in/harika-naga-uma-devi-nudurupati-49b461263)
+- 😄 Pronouns: She/Her
+- ⚡ Fun fact: I love to cook and Bake.
