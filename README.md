@@ -1,4 +1,4 @@
--👋 Hi, I’m @Harika-25888
+👋 Hi, I’m @Harika-25888
 - 👀 I’m interested in currently learning web development(React and Python) and open-source projects.
 - 🌱 I’m currently learning React and Python.
 - 💞️ I’m looking to collaborate on projects related to front-end development and data science.
