@@ -97,6 +97,341 @@
     </p>
 </footer>
 
+
+	/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e1c0;
+}
+
+/* Header Styling */
+header {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 3px 5px;
+}
+
+.text-content{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.logo {
+    width: 100px;  /* Adjust size as needed */
+    height: auto; /* Keep width and height equal for a perfect circle */
+    margin-right: 1px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    border: 2px solid #fff; /* Optional border */
+    cursor: pointer;
+    
+    animation: blink 1s infinite alternate; /* Apply the blink effect */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }  /* Fully visible */
+    100% { opacity: 0; } /* Completely invisible */
+}
+
+.logo:hover{
+    animation: none;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #b7410e;
+}
+
+header p {
+    font-size: 16px;
+    color: #5a3e1b;
+}
+
+/* Menu Section */
+.menu-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.butter-theme {
+    background-color: #FFEBB2;  /* Soft buttery yellow */
+    border-left: 10px solid #D4A017; /* Rich golden yellow */
+}
+
+.chocolate-theme {
+    background-color: #8B4513;  /* Dark chocolate brown */
+    font-color: white; /* White text for better contrast */
+    border-left: 10px solid #5C2C06; /* Deep cocoa color */
+}
+
+.pineapple-theme {
+    background-color: #FFDD67; /* Vibrant pineapple yellow */
+    border-left: 10px solid #FFB84D; /* Slightly darker orange */
+}
+
+.dryfruit-theme {
+    background-color: #E2A76F; /* Warm brownish-orange */
+    border-left: 10px solid #A0522D; /* Darker brown border */
+}
+
+.menu-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu-text {
+    flex: 1;
+}
+
+.menu-text h2 {
+    margin: 0;
+    color: #b7410e;
+}
+
+.menu-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-text ul li {
+    font-size: 14px;
+    color: #5a3e1b;
+}
+
+/* Promise Section */
+.promise-section {
+    background-color: #FFF8DC; /* Soft creamy vanilla color */
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #D2691E; /* Chocolate brown border */
+    border-bottom: 5px solid #FFD700; /* Golden yellow bottom border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promise-section h2 {
+    color: #8B4513; /* Rich chocolate color */
+    font-size: 24px;
+}
+
+.promise-section ul li {
+    font-size: 16px;
+    color: #5A3E1B; /* Warm brown */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #5C2C06; /* Dark chocolate brown */
+    padding: 15px;
+    text-align: center;
+    color: #FFD700; /* Golden yellow text */
+    border-top: 5px solid #D2691E; /* Rich brown border */
+}
+
+footer p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+footer a {
+    color: white; /* Bright warm yellow for links */
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: blue; /* Shiny gold on hover */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #ff9800;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+footer:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-text:hover{
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-text:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.promise-section{
+    transition: transform 0.3s ease-in-out;
+}
+.promise-section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Contact Section - Centered Icons with Images */
+.contact-info {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;
+    gap: 20px;  /* Space between icons */
+    margin-top: 10px;
+}
+
+.contact-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+ /* Jump Animation */
+ @keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Blink Animation */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.contact-info {
+    transition: transform 0.2s ease;
+}
+
+.contact-info:active {
+    animation: jump 0.3s ease-in-out, blink 0.3s ease-in-out;
+}
+
+.contact-info {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffcc80; /* Light orange background */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+    background-color: #ffa726; /* Darker orange on hover */
+}
+
+/* Icon jump and blink effect on click */
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.icon {
+    transition: transform 0.2s ease;
+}
+
+.icon:active {
+    animation: jump 0.3s ease-in-out, blink 0.3s ease-in-out;
+}
+
+.contact-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8B4513; /* Chocolate brown */
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Contact info section */
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffcc80; /* Light orange background */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffa726;
+}
+
+/* Icon jump and blink effect on click */
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.contact-info {
+    transition: transform 0.2s ease;
+}
+
+.contact-info:active {
+    animation: jump 0.3s ease-in-out, blink 0.3s ease-in-out;
+}
+
 <script src="Harika%20Nudurupati%20Bakehouse_files/script.js"></script>
 <!-- Code injected by live-server -->
 <script>
